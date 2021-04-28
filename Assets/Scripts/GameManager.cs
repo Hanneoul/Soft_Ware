@@ -1,39 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector] public static GameManager instance = null; //Singleton
+    public Text moneyText;
+    public float money;
 
+    public float surviveCnt;
+    public float failCnt;
 
-    void Awake()
-    {
-        Debug.Log("GameManager:Awake() Start.");
-        Screen.SetResolution(Screen.width, (Screen.width * 16) / 9 , true);
-        Debug.Log("GameManager:Resolution Setting Done.");
-
-        if (instance == null)
-            instance = this;
-        else if (instance != this)
-            Destroy(gameObject);
-
-       DontDestroyOnLoad(gameObject);
-
-       Debug.Log("GameManager:Awake() Done.");
-    }
-
-    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("GameManager:Start() Start.");
-        
-        Debug.Log("GameManager:Start() Done.");
+        money = 0;
+
+        InvokeRepeating("AutoMoney", 1, 1);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Wallet();
+        RoundFail();
+    }
+
+    void AutoMoney()
+    {
+        money += 10;
+    }
+
+    void Wallet()
+    {
+        moneyText.text = money.ToString();
+    }
+
+    void RoundFail()
+    {
+        if (surviveCnt == failCnt)
+        {
+            //fail_Img Ãâ·Â
+            Debug.Log("Fail");
+        }
     }
 }
