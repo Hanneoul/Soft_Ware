@@ -12,8 +12,10 @@ public class Tile : MonoBehaviour
     public GameManager gm;
 
     public GameObject tower1;
+    public GameObject tower2;
 
     public float tower1_money; //¼³Ä¡ºñ
+    public float tower2_money;
 
     void Start()
     {
@@ -44,6 +46,13 @@ public class Tile : MonoBehaviour
                     Instantiate(tower1, transform.position, Quaternion.identity);
                     rd.material.color = StartColor;
                     tm.tower1 = false;
+                }
+                else if(tm.tower2)
+                {
+                    gm.money -= tower2_money;
+                    Instantiate(tower2, transform.position, Quaternion.identity);
+                    rd.material.color = StartColor;
+                    tm.tower2 = false;
                 }
             }
             

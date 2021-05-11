@@ -10,7 +10,9 @@ public class Enemy : MonoBehaviour
     public float hp; // HP
 
     public float tower1_damage; // tower1의 공격력
-    public float drop_money; // 드랍머니
+    public float tower2_damage;
+    public float enemy1_drop_money; // 드랍머니
+    //public float enemy2_drop_money;
 
     public GameManager gm;
     StageManager stageManager;
@@ -44,7 +46,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("죽었다");
             this.transform.parent.GetComponent<SpawnManager>().Push(gameObject);
-            gm.money += drop_money;
+            gm.money += enemy1_drop_money;
         }
     }
 
@@ -59,7 +61,19 @@ public class Enemy : MonoBehaviour
             //{
             //   Destroy(gameObject);
             //   Debug.Log("죽었다");
-            //   gm.money += drop_money;
+            //   gm.money += enemy1_drop_money;
+            //}
+        }
+        if (other.CompareTag("Tower_Attack_2"))
+        {
+            hp -= tower2_damage;
+            Debug.Log("dddd");
+
+            //if (hp <= 0)
+            //{
+            //   Destroy(gameObject);
+            //   Debug.Log("죽었다");
+            //   gm.money += enemy2_drop_money;
             //}
         }
     }

@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2629042719680242776
 Transform:
   m_ObjectHideFlags: 0
@@ -151,9 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 12
   z: 1.69
-  hp: 2
-  tower1_damage: 5
-  drop_money: 5
+  hp: 40
+  tower1_damage: 10
+  tower2_damage: 30
+  enemy1_drop_money: 5
   gm: {fileID: 0}
 --- !u!54 &1539985517
 Rigidbody:

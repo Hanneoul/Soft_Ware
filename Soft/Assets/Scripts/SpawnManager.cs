@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpawnManager : MonoBehaviour
 {
+    public GameObject NextSpawner;
     public GameObject enemy;
     Queue<GameObject> enemyPool;
 
@@ -49,5 +51,10 @@ public class SpawnManager : MonoBehaviour
     void StopSpawn()
     {
         CancelInvoke("SpawnEnemy");
+        if(NextSpawner != null)
+        {
+            NextSpawner.GetComponent<SpawnManager>().RoundStart();
+        }
+        
     }
 }

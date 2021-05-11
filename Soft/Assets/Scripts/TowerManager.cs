@@ -5,10 +5,16 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     public bool tower1 = false;
+    public bool tower2 = false;
 
     public void Tower1_Btn() //tower1버튼 클릭시 Tile스크립트의 OnmouseOver로 감.
     {
         tower1 = true;
+    }
+
+    public void Tower2_Btn()
+    {
+        tower2 = true;
     }
 
 }
