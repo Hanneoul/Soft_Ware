@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour
             //   gm.money += enemy1_drop_money;
             //}
         }
-        if (other.CompareTag("Tower_Attack_2"))
+        else if (other.CompareTag("Tower_Attack_2"))
         {
             hp -= tower2_damage;
             Debug.Log("dddd");
