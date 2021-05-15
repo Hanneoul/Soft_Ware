@@ -2,44 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public Text moneyText;
-    public float money;
+    public static GameManager gameManager;
 
-    public float surviveCnt;
-    public float failCnt;
-
-    void Start()
+    public void Stage_01_Btn()
     {
-        money = 0;
-
-        InvokeRepeating("AutoMoney", 1, 1);
+        SceneManager.LoadScene("Stage01");
     }
 
-    void Update()
+    public void Stage_02_Btn()
     {
-        Wallet();
-        RoundFail();
+        SceneManager.LoadScene("Stage02");
     }
 
-    void AutoMoney()
+    public void Stage_03_Btn()
     {
-        money += 10;
+        SceneManager.LoadScene("Stage03");
     }
 
-    void Wallet()
+    public void Stage_04_Btn()
     {
-        moneyText.text = money.ToString();
-    }
-
-    void RoundFail()
-    {
-        if (surviveCnt == failCnt)
-        {
-            //fail_Img Ãâ·Â
-            Debug.Log("Fail");
-        }
+        SceneManager.LoadScene("Stage04");
     }
 }

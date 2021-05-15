@@ -7,16 +7,23 @@ public class Tile : MonoBehaviour
     public Color StartColor; 
     public Color SelectColor;
     Renderer rd;
+    StageManager stageManager;
 
     public TowerManager tm;
+    public GameManager gm;
 
     public GameObject tower1;
     public GameObject tower2;
     public GameObject tower3;
 
+    public float tower1_money;
+    public float tower2_money;
+    public float tower3_money;
+
     void Start()
     {
-        rd = GetComponent<Renderer>();    
+        rd = GetComponent<Renderer>();
+        stageManager = GameObject.Find("StageManager").GetComponent<StageManager>();
     }
 
     private void OnMouseExit() //타일 위치에서 마우스가 나왔을때
@@ -28,35 +35,50 @@ public class Tile : MonoBehaviour
     {
         rd.material.color = SelectColor;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)) // 타워 설치
         {
             if (tm.tower1)
             {
-                Instantiate(tower1, transform.position, Quaternion.identity);
-                rd.material.color = StartColor;
-                tm.tower1 = false;
                 //설치비 차감.
+                if (stageManager.money < tower1_money) Debug.Log("설치비 없음");
+                else
+                {
+                    stageManager.money -= tower1_money;
+                    Instantiate(tower1, transform.position, Quaternion.identity);
+                    rd.material.color = StartColor;
+                    tm.tower1 = false;
+                }
             }
             if (tm.tower2)
             {
-                Instantiate(tower2, transform.position, Quaternion.identity);
-                rd.material.color = StartColor;
-                tm.tower2 = false;
                 //설치비 차감.
+                if (stageManager.money < tower2_money) Debug.Log("설치비 없음");
+                else
+                {
+                    stageManager.money -= tower2_money;
+                    Instantiate(tower2, transform.position, Quaternion.identity);
+                    rd.material.color = StartColor;
+                    tm.tower2 = false;
+                }
             }
             if (tm.tower3)
             {
-                Instantiate(tower3, transform.position, Quaternion.identity);
-                rd.material.color = StartColor;
-                tm.tower3 = false;
                 //설치비 차감.
+                if (stageManager.money < tower3_money) Debug.Log("설치비 없음");
+                else
+                {
+                    stageManager.money -= tower3_money;
+                    Instantiate(tower3, transform.position, Quaternion.identity);
+                    rd.material.color = StartColor;
+                    tm.tower3 = false;
+                }
             }
         }
     }
 
     private void OnMouseUp() 
     {
-        //타일 위치에 마우스 뗐을때 ( 타워설치)
+        
     }
 
     void Update()

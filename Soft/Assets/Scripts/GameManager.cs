@@ -4,15 +4,25 @@ using UnityEngine;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
-
-    public GameObject mob;
-
-    public Enemy enemy;
+    public static GameManager gameManager;
 
     public TextMeshProUGUI moneyText; 
 
     public float money; //초기지급머니
     //public float drop_money; // 드랍머니
+
+    void Awake()
+    {
+        if (gameManager == null)
+        {
+            gameManager = this;
+            Debug.Log("GameManager : Object Creation Complete.");
+        }
+        else if (gameManager != null)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -21,13 +31,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        moneyText.text = money.ToString();
-
+        Money();
     }
-
-    public void MobInstantiate()
+    
+    public void Money()
     {
-        //Instantiate(mob, mob.transform.position, Quaternion.Euler(270, 0, 90));
-        Instantiate(mob, transform.parent);
+        moneyText.text = money.ToString();
     }
 }

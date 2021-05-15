@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,25 +9,30 @@ public class Enemy : MonoBehaviour
     public float z;
 
     public float hp; // HP
+    public Slider enemy_Hp_Bar;
 
     public float tower1_damage; // tower1의 공격력
     public float tower2_damage;
-    public float enemy1_drop_money; // 드랍머니
-    //public float enemy2_drop_money;
+    public int randomDmg_min;
+    public int randomDmg_max;
+    public int randomDmg;
+    public float enemy_drop_money; // 드랍머니
 
-    public GameManager gm;
     StageManager stageManager;
 
     void Start()
     {
-        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         stageManager = GameObject.Find("StageManager").GetComponent<StageManager>();
     }
 
     void Update()
     {
+        enemy_Hp_Bar.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.8f, gameObject.transform.position.z);
+        enemy_Hp_Bar.value = Mathf.Lerp(enemy_Hp_Bar.value, hp, Time.deltaTime * 10f);
+
         Survive();
         Die();
+        RandomAtk();
     }
 
     void Survive( )
@@ -34,7 +40,7 @@ public class Enemy : MonoBehaviour
         if (this.gameObject.transform.position.x >= x 
             && this.gameObject.transform.position.z >= z)
         {
-            Debug.Log("살았다"); 
+            Debug.Log("살았다");
             this.transform.parent.GetComponent<SpawnManager>().Push(gameObject);
             stageManager.surviveCnt++;
         }
@@ -46,8 +52,12 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("죽었다");
             this.transform.parent.GetComponent<SpawnManager>().Push(gameObject);
-            gm.money += enemy1_drop_money;
+            GameManager.gameManager.money += enemy_drop_money;
         }
+    }
+    void RandomAtk()
+    {
+        randomDmg = Random.Range(randomDmg_min, randomDmg_max);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,7 +77,6 @@ public class Enemy : MonoBehaviour
         else if (other.CompareTag("Tower_Attack_2"))
         {
             hp -= tower2_damage;
-            Debug.Log("dddd");
 
             //if (hp <= 0)
             //{
@@ -75,6 +84,10 @@ public class Enemy : MonoBehaviour
             //   Debug.Log("죽었다");
             //   gm.money += enemy2_drop_money;
             //}
+        }
+        else if (other.CompareTag("RandomDmgTower"))
+        {
+            hp -= randomDmg;
         }
     }
 }

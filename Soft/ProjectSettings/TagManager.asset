@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tower_Attack
   - Tower_Attack_2
+  - Enemy
+  - RandomDmgTower
   layers:
   - Default
   - TransparentFX

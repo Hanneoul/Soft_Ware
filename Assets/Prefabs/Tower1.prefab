@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6714741702589006273}
   - component: {fileID: 1558210365264320103}
   - component: {fileID: 7716793394299864542}
-  - component: {fileID: 1884462557066740731}
+  - component: {fileID: 5530966028875472610}
   m_Layer: 0
   m_Name: Tower1
   m_TagString: Untagged
@@ -129,7 +129,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1884462557066740731
+--- !u!114 &5530966028875472610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,13 +138,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6343345967271924230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e61e4abeb7592f4eb5910b50a889506, type: 3}
+  m_Script: {fileID: 11500000, guid: 685d150bfb2288842879f7cd34fd4185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
   atkSpeed: 0.5
   fireRate: 1
   turnSpeed: 10
-  bulletPrf: {fileID: 8515956148080642311, guid: 3a08f3925999c1a4880fa55c2d1a8640, type: 3}
+  Tower1_AttackPower: 10
+  bulletPrf: {fileID: 8934138673388479407, guid: 4da05fefcb38a7a44b0706af3fc07ffb, type: 3}
   firePoint: {fileID: 644805252430542603}
   enemyTag: Enemy

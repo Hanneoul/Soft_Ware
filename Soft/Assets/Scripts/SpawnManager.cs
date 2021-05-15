@@ -10,6 +10,7 @@ public class SpawnManager : MonoBehaviour
     Queue<GameObject> enemyPool;
 
     public float enemyNum;
+    public float spawnCycle;
 
     void Start()
     {
@@ -26,10 +27,9 @@ public class SpawnManager : MonoBehaviour
 
     public void RoundStart()
     {
-        InvokeRepeating("SpawnEnemy", 0, 1);
-        Invoke("StopSpawn", enemyNum);
+        InvokeRepeating(nameof(SpawnEnemy), 1, spawnCycle);
+        Invoke(nameof(StopSpawn), enemyNum * spawnCycle + 1);
     }
-
     public GameObject Pop()
     {
         return enemyPool.Dequeue();
@@ -54,7 +54,6 @@ public class SpawnManager : MonoBehaviour
         if(NextSpawner != null)
         {
             NextSpawner.GetComponent<SpawnManager>().RoundStart();
-        }
-        
+        }        
     }
 }

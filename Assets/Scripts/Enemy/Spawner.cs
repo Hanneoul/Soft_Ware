@@ -20,14 +20,12 @@ public class Spawner : MonoBehaviour
             Enemy.SetActive(false);
             enemyPool.Enqueue(Enemy);
         }
+    }    
 
+    public void RoundStart()
+    {
         InvokeRepeating("SpawnEnemy", 0, 1);
         Invoke("StopSpawn", enemyNum);
-    }
-
-    void Update()
-    {
-
     }
 
     public GameObject Pop()
@@ -52,5 +50,4 @@ public class Spawner : MonoBehaviour
     {
         CancelInvoke("SpawnEnemy");
     }
-
 }
