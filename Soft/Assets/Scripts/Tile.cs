@@ -33,13 +33,22 @@ public class Tile : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) // 타워 설치
         {
-            if(GameManager.gameManager.money<tower1_money || GameManager.gameManager.money<tower2_money)
+            /*if(GameManager.gameManager.money < tower1_money || tm.tower1 == true)
             {
-                Debug.Log("설치비 ㄴㄴ");
+                Debug.Log("타워 1을(를) 설치하기에 충분한 돈이 없습니다.");
+            }
+            if(GameManager.gameManager.money < tower2_money || tm.tower2 == true)
+            {
+
+                Debug.Log("타워 2을(를) 설치하기에 충분한 돈이 없습니다.");
+            }
+            if(GameManager.gameManager.money < random_Tower_Money || tm.radomTower == true)
+            {
+                Debug.Log("랜덤 타워을(를) 설치하기에 충분한 돈이 없습니다.");
             }
             else
-            {
-                if (tm.tower1)
+            {*/
+            if (tm.tower1)
                 {
                     //설치비 차감.
                     GameManager.gameManager.money -= tower1_money;
@@ -61,8 +70,7 @@ public class Tile : MonoBehaviour
                     rd.material.color = StartColor;
                     tm.radomTower = false;
                 }
-            }
-            
+            //}            
         }
     }
 }

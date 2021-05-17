@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
     public float x;
     public float z;
 
+    public TextMesh hpText;
     public float hp; // HP
-    public Slider enemy_Hp_Bar;
 
     public float tower1_damage; // tower1의 공격력
     public float tower2_damage;
@@ -27,12 +28,15 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        enemy_Hp_Bar.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.8f, gameObject.transform.position.z);
-        enemy_Hp_Bar.value = Mathf.Lerp(enemy_Hp_Bar.value, hp, Time.deltaTime * 10f);
-
+        if(hpText != null)
+        {
+            hpText.text = hp.ToString("N0");
+        }
+        
         Survive();
-        Die();
-        RandomAtk();
+        Die();        
+
+        randomDmg = Random.Range(randomDmg_min, randomDmg_max);
     }
 
     void Survive( )
@@ -55,18 +59,15 @@ public class Enemy : MonoBehaviour
             GameManager.gameManager.money += enemy_drop_money;
         }
     }
-    void RandomAtk()
-    {
-        randomDmg = Random.Range(randomDmg_min, randomDmg_max);
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("맞았다");
+        Debug.Log("인식");
+
         if (other.CompareTag("Tower_Attack"))
         {
             hp -= tower1_damage;
-
+            Debug.Log("타워1에 맞음");
             //if (hp <= 0)
             //{
             //   Destroy(gameObject);
@@ -77,6 +78,7 @@ public class Enemy : MonoBehaviour
         else if (other.CompareTag("Tower_Attack_2"))
         {
             hp -= tower2_damage;
+            Debug.Log("타워2에 맞음");
 
             //if (hp <= 0)
             //{
@@ -85,8 +87,9 @@ public class Enemy : MonoBehaviour
             //   gm.money += enemy2_drop_money;
             //}
         }
-        else if (other.CompareTag("RandomDmgTower"))
+        else if (other.CompareTag("Random_Attack"))
         {
+            Debug.Log("아니 씨발 대체 왜!!!!!!!!!!!");
             hp -= randomDmg;
         }
     }

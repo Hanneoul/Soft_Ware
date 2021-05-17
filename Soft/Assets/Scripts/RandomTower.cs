@@ -27,7 +27,7 @@ public class RandomTower : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("맞았다");
+        Debug.Log("맞았냐..?");
         if(other.gameObject.CompareTag("Enemy"))
         {
             enemy.hp -= atk;

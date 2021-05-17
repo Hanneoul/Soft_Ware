@@ -112,10 +112,9 @@ MonoBehaviour:
   StartColor: {r: 0, g: 1, b: 0.96201396, a: 0}
   SelectColor: {r: 0, g: 0, b: 0, a: 0}
   tm: {fileID: 0}
-  gm: {fileID: 0}
   tower1: {fileID: 128059788982316899, guid: ac4aa6b0a2d7f0f4c91d33d884fa9d3d, type: 3}
   tower2: {fileID: 128059788982316899, guid: 766446b907f46d4408f3465993be344b, type: 3}
   random_Tower: {fileID: 5113640564627751086, guid: bb6e86587ae153c4188c5913c1ffa88c, type: 3}
   tower1_money: 20
   tower2_money: 50
-  random_Tower_Money: 0
+  random_Tower_Money: 40

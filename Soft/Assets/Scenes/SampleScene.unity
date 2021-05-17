@@ -1410,6 +1410,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1917671334212245143, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1917671334212245164, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -2271,7 +2275,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476088439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 22.98}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1994070256}
@@ -10949,6 +10953,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1917671334212245143, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917671334212245167, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
+      propertyPath: hp
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 2629042719680242787, guid: 86ed252a24129a54a87ca8ec5b80a8bf, type: 3}
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: spawnCycle
       value: 1
