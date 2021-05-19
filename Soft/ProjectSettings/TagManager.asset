@@ -8,6 +8,7 @@ TagManager:
   - Tower_Attack_2
   - Enemy
   - Random_Attack
+  - Ex_Tower_Attack
   layers:
   - Default
   - TransparentFX
