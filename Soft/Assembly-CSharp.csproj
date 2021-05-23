@@ -65,9 +65,7 @@
     <Compile Include="Assets\Scripts\Manager\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Map\Navigation.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Tower\Tower1.cs" />
-    <Compile Include="Assets\Scripts\Tower\Tower2.cs" />
-    <Compile Include="Assets\Scripts\Tower\Ex_Tower.cs" />
+    <Compile Include="Assets\Scripts\Tower\Tower.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

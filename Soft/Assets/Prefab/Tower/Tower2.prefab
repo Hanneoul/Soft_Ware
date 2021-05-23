@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3022246688225603788}
   - component: {fileID: 8052370033268290958}
   - component: {fileID: 4279292305884492870}
-  - component: {fileID: 3181628266957609323}
+  - component: {fileID: -9101706671253778436}
   m_Layer: 0
   m_Name: Tower2
   m_TagString: Tower_Attack_2
@@ -114,7 +114,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 2, z: 6}
   m_Center: {x: 0.5, y: 0, z: 0}
---- !u!114 &3181628266957609323
+--- !u!114 &-9101706671253778436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 128059788982316899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c37c616b0f2afc1498e6a8f7863a8a57, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c1b244e6f8fb674196f9ed51cb74318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   atk: 40

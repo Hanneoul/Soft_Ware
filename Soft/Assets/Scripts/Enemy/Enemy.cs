@@ -12,10 +12,10 @@ public class Enemy : MonoBehaviour
     public TextMesh hpText;
     public float hp; // HP
 
-    public Tower1 tower1; // tower1의 공격력
-    public Tower2 tower2;
+    public Tower tower1; // tower1의 공격력
+    public Tower tower2;
+    public Tower ex_Tower;
     public RandomTower rdTower;
-    public Ex_Tower ex_Tower;
 
     public float enemy_drop_money; // 드랍머니
 
@@ -46,13 +46,7 @@ public class Enemy : MonoBehaviour
         }*/
         Survive();
         Die();
-        RdAtk();
 
-    }
-
-    void RdAtk()
-    {
-        rdTower.atk =Random.Range(rdTower.atk_Min, rdTower.atk_Max);
     }
 
     void Survive( )
@@ -104,6 +98,9 @@ public class Enemy : MonoBehaviour
         }
         if (other.CompareTag("Random_Attack"))
         {
+
+            rdTower.atk = Random.Range(rdTower.atk_Min, rdTower.atk_Max);
+            Debug.Log(rdTower.atk);
             hp -= rdTower.atk;
             Debug.Log("Random Tower에 맞음"+rdTower.atk);
         }

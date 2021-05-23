@@ -315,10 +315,8 @@
 "Assets/Scripts/Map/LimitTime.cs"
 "Assets/Scripts/Map/Navigation.cs"
 "Assets/Scripts/Map/Tile.cs"
-"Assets/Scripts/Tower/Ex_Tower.cs"
 "Assets/Scripts/Tower/RandomTower.cs"
-"Assets/Scripts/Tower/Tower1.cs"
-"Assets/Scripts/Tower/Tower2.cs"
+"Assets/Scripts/Tower/Tower.cs"
 -langversion:8.0
 
 /deterministic
