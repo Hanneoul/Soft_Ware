@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager gameManager;
+    public static GameManager gameManager = null;
 
-    public TextMeshProUGUI moneyText; 
+    public TextMeshProUGUI moneyText;
 
     public float money; //초기지급머니
     //public float drop_money; // 드랍머니

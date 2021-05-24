@@ -249,8 +249,8 @@ MonoBehaviour:
   z: 1.69
   hpText: {fileID: 1367500246463721711}
   hp: 90
-  tower1: {fileID: 1112555053736517261, guid: ac4aa6b0a2d7f0f4c91d33d884fa9d3d, type: 3}
-  tower2: {fileID: 3181628266957609323, guid: 766446b907f46d4408f3465993be344b, type: 3}
+  tower1: {fileID: -1638410041846105877, guid: ac4aa6b0a2d7f0f4c91d33d884fa9d3d, type: 3}
+  tower2: {fileID: -9101706671253778436, guid: 766446b907f46d4408f3465993be344b, type: 3}
+  ex_Tower: {fileID: 7744282912985727139, guid: 73fbf18790c68e942b58eadae26007de, type: 3}
   rdTower: {fileID: -8854907516733722189, guid: bb6e86587ae153c4188c5913c1ffa88c, type: 3}
-  ex_Tower: {fileID: 1117888758252777698, guid: 73fbf18790c68e942b58eadae26007de, type: 3}
   enemy_drop_money: 50

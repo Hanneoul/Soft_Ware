@@ -312,7 +312,6 @@
 "Assets/Scripts/Manager/SpawnManager.cs"
 "Assets/Scripts/Manager/StageManager.cs"
 "Assets/Scripts/Manager/TowerManager.cs"
-"Assets/Scripts/Map/LimitTime.cs"
 "Assets/Scripts/Map/Navigation.cs"
 "Assets/Scripts/Map/Tile.cs"
 "Assets/Scripts/Tower/RandomTower.cs"
