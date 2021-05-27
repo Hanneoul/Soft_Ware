@@ -39,19 +39,19 @@ public class Tile : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) // 타워 설치
         {
-            if(GameManager.gameManager.money < tower1_money && tm.tower1 == true)
+            if(GameManager.instance.money < tower1_money && tm.tower1 == true)
             {
                 Debug.Log("타워 1을(를) 설치하기에 충분한 돈이 없습니다.");
             }
-            else if(GameManager.gameManager.money < tower2_money && tm.tower2 == true)
+            else if(GameManager.instance.money < tower2_money && tm.tower2 == true)
             {
                 Debug.Log("타워 2을(를) 설치하기에 충분한 돈이 없습니다.");
             }
-            else if (GameManager.gameManager.money < random_Tower_Money && tm.randomTower == true)
+            else if (GameManager.instance.money < random_Tower_Money && tm.randomTower == true)
             {
                 Debug.Log("랜덤 타워을(를) 설치하기에 충분한 돈이 없습니다.");
             }
-            else if(GameManager.gameManager.money < ex_Tower_Money && tm.ex_Tower == true)
+            else if(GameManager.instance.money < ex_Tower_Money && tm.ex_Tower == true)
             {
                 Debug.Log("Ex_Tower을(를) 설치하기에 충분한 돈이 없습니다.");
             }
@@ -60,28 +60,28 @@ public class Tile : MonoBehaviour
                 if (tm.tower1)
                 {
                     //설치비 차감.
-                    GameManager.gameManager.money -= tower1_money;
+                    GameManager.instance.money -= tower1_money;
                     Instantiate(tower1, transform.position, Quaternion.identity);
                     rd.material.color = StartColor;
                     tm.tower1 = false;
                 }
                 else if (tm.tower2)
                 {
-                    GameManager.gameManager.money -= tower2_money;
+                    GameManager.instance.money -= tower2_money;
                     Instantiate(tower2, transform.position, Quaternion.identity);
                     rd.material.color = StartColor;
                     tm.tower2 = false;
                 }
                 else if (tm.randomTower)
                 {
-                    GameManager.gameManager.money -= random_Tower_Money;
+                    GameManager.instance.money -= random_Tower_Money;
                     Instantiate(random_Tower, transform.position, Quaternion.identity);
                     rd.material.color = StartColor;
                     tm.randomTower = false;
                 }
                 else if (tm.ex_Tower)
                 {
-                    GameManager.gameManager.money -= ex_Tower_Money;
+                    GameManager.instance.money -= ex_Tower_Money;
                     Instantiate(ex_Tower, transform.position, Quaternion.identity);
                     rd.material.color = StartColor;
                     tm.ex_Tower = false;

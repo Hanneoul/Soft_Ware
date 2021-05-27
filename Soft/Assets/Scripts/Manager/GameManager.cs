@@ -4,21 +4,22 @@ using UnityEngine;
 using TMPro;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager gameManager = null;
+    public static GameManager instance = null;
 
     public TextMeshProUGUI moneyText;
+    public TextMeshProUGUI totalMoneyText;
 
     public float money; //초기지급머니
-    //public float drop_money; // 드랍머니
+    public float totalMoney; //번 돈
 
     void Awake()
     {
-        if (gameManager == null)
+        if (instance == null)
         {
-            gameManager = this;
+            instance = this;
             Debug.Log("GameManager : Object Creation Complete.");
         }
-        else if (gameManager != null)
+        else if (instance != null)
         {
             Destroy(gameObject);
         }
@@ -32,5 +33,6 @@ public class GameManager : MonoBehaviour
     public void Money()
     {
         moneyText.text = money.ToString();
+        totalMoneyText.text = totalMoney.ToString();
     }
 }

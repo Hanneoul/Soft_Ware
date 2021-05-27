@@ -307,7 +307,6 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/DmgText.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Manager/GameManager.cs"
 "Assets/Scripts/Manager/SpawnManager.cs"
