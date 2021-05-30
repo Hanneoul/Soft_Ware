@@ -317,6 +317,8 @@
 "Assets/Scripts/Map/Tile.cs"
 "Assets/Scripts/Tower/RandomTower.cs"
 "Assets/Scripts/Tower/Tower.cs"
+"Assets/Scripts/UIScript/DictionaryScript.cs"
+"Assets/Scripts/UIScript/SettingScript.cs"
 -langversion:8.0
 
 /deterministic
