@@ -579,7 +579,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 86771506}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579806615}
+        m_TargetAssemblyTypeName: StageBtnLoad, Assembly-CSharp
+        m_MethodName: Stage_1
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &86771506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,6 +1508,49 @@ MonoBehaviour:
   dictionaryPopUp: {fileID: 349264488}
   scrollView_enemy: {fileID: 1745773621}
   scrollView_tower: {fileID: 302404913}
+--- !u!1 &579806614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579806616}
+  - component: {fileID: 579806615}
+  m_Layer: 0
+  m_Name: StageListBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &579806615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579806614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4601e8158042f534890ea16845bac382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &579806616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579806614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585534967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,7 +2303,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1046638078}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579806615}
+        m_TargetAssemblyTypeName: StageBtnLoad, Assembly-CSharp
+        m_MethodName: Stage_5
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1046638078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3059,7 +3126,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652429418}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579806615}
+        m_TargetAssemblyTypeName: StageBtnLoad, Assembly-CSharp
+        m_MethodName: Stage_4
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652429418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,7 +3627,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2058720446}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579806615}
+        m_TargetAssemblyTypeName: StageBtnLoad, Assembly-CSharp
+        m_MethodName: Stage_3
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2058720446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3747,7 +3838,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2078086802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579806615}
+        m_TargetAssemblyTypeName: StageBtnLoad, Assembly-CSharp
+        m_MethodName: Stage_2
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2078086802
 MonoBehaviour:
   m_ObjectHideFlags: 0

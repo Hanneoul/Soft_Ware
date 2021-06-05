@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Random_Attack
   - Ex_Tower_Attack
+  - WayPoint
   layers:
   - Default
   - TransparentFX

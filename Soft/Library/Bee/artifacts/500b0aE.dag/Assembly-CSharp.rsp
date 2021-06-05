@@ -319,6 +319,7 @@
 "Assets/Scripts/Tower/Tower.cs"
 "Assets/Scripts/UIScript/DictionaryScript.cs"
 "Assets/Scripts/UIScript/SettingScript.cs"
+"Assets/StageBtnLoad.cs"
 -langversion:8.0
 
 /deterministic

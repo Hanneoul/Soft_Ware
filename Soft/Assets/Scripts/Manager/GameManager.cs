@@ -12,12 +12,13 @@ public class GameManager : MonoBehaviour
     public float money; //초기지급머니
     public float totalMoney; //번 돈
 
+    public GameObject[] waypoints; //wayPoints
+
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            Debug.Log("GameManager : Object Creation Complete.");
         }
         else if (instance != null)
         {

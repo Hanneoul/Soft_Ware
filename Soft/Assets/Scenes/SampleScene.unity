@@ -987,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: enemy
       value: 
-      objectReference: {fileID: 2629042719680242787, guid: b8e357cf067c1c44a97c48e1e2973db6, type: 3}
+      objectReference: {fileID: 9040328412294362997, guid: b8e357cf067c1c44a97c48e1e2973db6, type: 3}
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: enemyNum
       value: 3
@@ -3346,6 +3346,7 @@ MonoBehaviour:
   totalMoneyText: {fileID: 2127786045}
   money: 100
   totalMoney: 100
+  waypoints: []
 --- !u!4 &1084691439
 Transform:
   m_ObjectHideFlags: 0
@@ -4335,7 +4336,7 @@ PrefabInstance:
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: enemy
       value: 
-      objectReference: {fileID: 2629042719680242787, guid: be6eaaff4e42a6746bc912ed8edbb5af, type: 3}
+      objectReference: {fileID: 6925196889832703656, guid: be6eaaff4e42a6746bc912ed8edbb5af, type: 3}
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: enemyNum
       value: 2
@@ -5697,7 +5698,7 @@ PrefabInstance:
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: enemy
       value: 
-      objectReference: {fileID: 2629042719680242787, guid: 86ed252a24129a54a87ca8ec5b80a8bf, type: 3}
+      objectReference: {fileID: 3610757565470852214, guid: 86ed252a24129a54a87ca8ec5b80a8bf, type: 3}
     - target: {fileID: 2481980255233717448, guid: f1115a96318c65b47a99fa0a60e1dff8, type: 3}
       propertyPath: spawnCycle
       value: 1

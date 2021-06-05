@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour
 {
-    public string sceneName;
+    public string sceneName; //stageList ¾ÀÀüÈ¯
 
     void Start()
     {

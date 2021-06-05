@@ -6,19 +6,38 @@ using UnityEngine.AI;
 public class Navigation : MonoBehaviour
 {
     NavMeshAgent agent;
+    int i = 1;
 
-    public float x;
-    public float y;
-    public float z;
 
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
 
     }
+    void Start()
+    {
+         agent.SetDestination(GameManager.instance.waypoints[i-1].transform.position);
+    }
 
     void Update()
     {
-        agent.SetDestination(new Vector3(x, y, z));
+        /*if(Vector3.Distance(gameObject.transform.position, gm.waypoints[i-1].transform.position)<0.5f)
+        {
+            Debug.Log("gogo");
+        }*/
+       
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("WayPoint"))
+        {
+            if (i < GameManager.instance.waypoints.Length)
+            {
+                Debug.Log("gogo");
+                agent.SetDestination(GameManager.instance.waypoints[i].transform.position);
+                i++;
+            }
+        }
     }
 }
