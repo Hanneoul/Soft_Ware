@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
@@ -20,6 +21,8 @@ public class Enemy : MonoBehaviour
     public float enemy_drop_money; // 드랍머니
 
     StageManager stageManager;
+
+    public UnityEvent Die_Fade;
 
     void Start()
     {
@@ -54,6 +57,8 @@ public class Enemy : MonoBehaviour
         if (hp <= 0)
         {
             Debug.Log("죽었다");
+            Die_Fade.Invoke();
+            //오류 : 바로 Push 해버려서 애니메이션이 나오기 전에 없어짐..
             this.transform.parent.GetComponent<SpawnManager>().Push(gameObject);
             GameManager.instance.money += enemy_drop_money;
             GameManager.instance.totalMoney += enemy_drop_money;

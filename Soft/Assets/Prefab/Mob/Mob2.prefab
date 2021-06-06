@@ -459,3 +459,18 @@ MonoBehaviour:
   ex_Tower: {fileID: 7744282912985727139, guid: 73fbf18790c68e942b58eadae26007de, type: 3}
   rdTower: {fileID: -8854907516733722189, guid: bb6e86587ae153c4188c5913c1ffa88c, type: 3}
   enemy_drop_money: 30
+  Die_Fade:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4699951174317197411}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Die
+          m_BoolArgument: 0
+        m_CallState: 2
