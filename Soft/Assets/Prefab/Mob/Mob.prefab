@@ -347,14 +347,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8244bebca58965c469265ef6988a098d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: -23.46
-  z: 6.05
   hpText: {fileID: 7876958913155521070}
   hp: 11
   wp: 0
   tower1: {fileID: -1638410041846105877, guid: ac4aa6b0a2d7f0f4c91d33d884fa9d3d, type: 3}
   tower2: {fileID: -9101706671253778436, guid: 766446b907f46d4408f3465993be344b, type: 3}
   ex_Tower: {fileID: 7744282912985727139, guid: 73fbf18790c68e942b58eadae26007de, type: 3}
+  bulletTower: {fileID: 6417712360417502348, guid: 5b4dc0425e2aac7468c4f4ad42db05dc, type: 3}
   rdTower: {fileID: -8854907516733722189, guid: bb6e86587ae153c4188c5913c1ffa88c, type: 3}
   enemy_drop_money: 10
   Die_Fade:

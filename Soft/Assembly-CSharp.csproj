@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\UIScript\SettingScript.cs" />
     <Compile Include="Assets\Scripts\Map\Navigation.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Tower1.cs" />
+    <Compile Include="Assets\Scripts\Bullet1.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
