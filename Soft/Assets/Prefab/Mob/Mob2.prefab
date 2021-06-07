@@ -450,6 +450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8244bebca58965c469265ef6988a098d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  x: 12
+  z: 1.69
+>>>>>>> 5f889cd4faef4334b7f779625d7b77a770f8e960
   hpText: {fileID: 4293517989302416506}
   hp: 50
   wp: 0

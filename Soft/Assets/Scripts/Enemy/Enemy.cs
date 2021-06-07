@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
 {
     public TextMesh hpText;
     public float hp; // HP
-    public float wp;
 
     public Tower tower1; // tower1의 공격력
     public Tower tower2;
@@ -42,8 +41,14 @@ public class Enemy : MonoBehaviour
     }
 
     void Survive( )
+<<<<<<< HEAD
     {        
         if(wp==GameManager.instance.waypoints.Length)
+=======
+    {
+        if (this.gameObject.transform.position.x >= x 
+            && this.gameObject.transform.position.z >= z)
+>>>>>>> 5f889cd4faef4334b7f779625d7b77a770f8e960
         {
             Debug.Log("살았다");
             this.transform.parent.GetComponent<SpawnManager>().Push(gameObject);
@@ -88,6 +93,7 @@ public class Enemy : MonoBehaviour
             hp -= ex_Tower.atk;
             Debug.Log("Ex_Tower에 맞음 " + ex_Tower.atk);
         }
+<<<<<<< HEAD
         if(other.CompareTag("WayPoint"))
         {
             wp++;
@@ -98,5 +104,7 @@ public class Enemy : MonoBehaviour
             hp -= bullet.atk;
             Debug.Log("으악");
         }
+=======
+>>>>>>> 5f889cd4faef4334b7f779625d7b77a770f8e960
     }
 }
