@@ -10,10 +10,6 @@ public class SettingScript : MonoBehaviour
     {
         settingPopUp.SetActive(false);
     }
-    void Update()
-    {
-        
-    }
 
     public void SettingBtn()
     {

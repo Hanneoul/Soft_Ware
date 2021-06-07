@@ -34,7 +34,6 @@ public class Navigation : MonoBehaviour
         {
             if (i < GameManager.instance.waypoints.Length)
             {
-                Debug.Log("gogo");
                 agent.SetDestination(GameManager.instance.waypoints[i].transform.position);
                 i++;
             }

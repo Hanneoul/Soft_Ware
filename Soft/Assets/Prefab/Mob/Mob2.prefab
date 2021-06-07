@@ -450,8 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8244bebca58965c469265ef6988a098d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 12
-  z: 1.69
+  x: -23.46
+  z: 6.05
   hpText: {fileID: 4293517989302416506}
   hp: 50
   tower1: {fileID: -1638410041846105877, guid: ac4aa6b0a2d7f0f4c91d33d884fa9d3d, type: 3}
