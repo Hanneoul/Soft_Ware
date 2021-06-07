@@ -10,6 +10,7 @@ TagManager:
   - Random_Attack
   - Ex_Tower_Attack
   - WayPoint
+  - Coffee1
   layers:
   - Default
   - TransparentFX

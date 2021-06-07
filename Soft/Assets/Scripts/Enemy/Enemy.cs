@@ -7,16 +7,15 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
-    public float x;
-    public float z;
-
     public TextMesh hpText;
     public float hp; // HP
 
     public Tower tower1; // tower1의 공격력
     public Tower tower2;
     public Tower ex_Tower;
+    public Tower1 bulletTower;
     public RandomTower rdTower;
+    public Bullet1 bullet;
 
     public float enemy_drop_money; // 드랍머니
 
@@ -42,9 +41,14 @@ public class Enemy : MonoBehaviour
     }
 
     void Survive( )
+<<<<<<< HEAD
+    {        
+        if(wp==GameManager.instance.waypoints.Length)
+=======
     {
         if (this.gameObject.transform.position.x >= x 
             && this.gameObject.transform.position.z >= z)
+>>>>>>> 5f889cd4faef4334b7f779625d7b77a770f8e960
         {
             Debug.Log("살았다");
             this.transform.parent.GetComponent<SpawnManager>().Push(gameObject);
@@ -89,5 +93,18 @@ public class Enemy : MonoBehaviour
             hp -= ex_Tower.atk;
             Debug.Log("Ex_Tower에 맞음 " + ex_Tower.atk);
         }
+<<<<<<< HEAD
+        if(other.CompareTag("WayPoint"))
+        {
+            wp++;
+            Debug.Log(wp);
+        }
+        if(other.CompareTag("Coffee1"))
+        {
+            hp -= bullet.atk;
+            Debug.Log("으악");
+        }
+=======
+>>>>>>> 5f889cd4faef4334b7f779625d7b77a770f8e960
     }
 }
