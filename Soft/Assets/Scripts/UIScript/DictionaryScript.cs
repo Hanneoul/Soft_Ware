@@ -19,7 +19,7 @@ public class DictionaryScript : MonoBehaviour
         
     }
 
-    public void DictionaryBtn()
+    public void DictionaryBtn() //초기 = 타워 설정창
     {
         dictionaryPopUp.SetActive(true);
         scrollView_enemy.SetActive(false);
@@ -34,7 +34,6 @@ public class DictionaryScript : MonoBehaviour
     {
         scrollView_enemy.SetActive(false);
         scrollView_tower.SetActive(true);
-
     }
 
     public void Dic_Enemy()
