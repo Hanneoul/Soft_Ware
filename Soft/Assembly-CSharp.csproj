@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\UIScript\SceneLoad.cs" />
     <Compile Include="Assets\Scripts\Map\Tile.cs" />
     <Compile Include="Assets\Scripts\Tower\RandomTower.cs" />
+    <Compile Include="Assets\Scripts\Tower1.cs" />
     <Compile Include="Assets\Scripts\UIScript\DictionaryScript.cs" />
     <Compile Include="Assets\Scripts\UIScript\StageBtnLoad.cs" />
     <Compile Include="Assets\Scripts\Manager\StageManager.cs" />
@@ -66,12 +67,11 @@
     <Compile Include="Assets\Scripts\Manager\TowerManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\DieFade.cs" />
+    <Compile Include="Assets\Scripts\Bullet1.cs" />
     <Compile Include="Assets\Scripts\Manager\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\UIScript\SettingScript.cs" />
     <Compile Include="Assets\Scripts\Map\Navigation.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Tower1.cs" />
-    <Compile Include="Assets\Scripts\Bullet1.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

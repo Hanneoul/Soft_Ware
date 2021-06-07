@@ -46,8 +46,9 @@ public class Bullet1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            enemy.hp -= atk;
+            //enemy.hp -= atk;
             Destroy(gameObject);
+            Debug.Log("¿Ö...");
         }
     }
 

@@ -95,7 +95,6 @@ public class Enemy : MonoBehaviour
         }
         if(other.CompareTag("Coffee1"))
         {
-            hp -= bulletTower.tower1_AttackPower;
             hp -= bullet.atk;
             Debug.Log("À¸¾Ç");
         }

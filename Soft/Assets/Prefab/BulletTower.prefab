@@ -112,8 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3
   atkSpeed: 0.5
-  fireRate: 1
-  Tower1_AttackPower: 10
+  fireRate: 3
+  tower1_AttackPower: 0
   bulletPrf: {fileID: 8225025977280897540, guid: 42630bd3ffee56043b81452462f75f4d, type: 3}
   firePoint: {fileID: 810388896068372279}
   enemyTag: Enemy
